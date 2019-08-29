@@ -102,12 +102,15 @@ body {
 #projects {
   text-align: center;
   padding: 10rem 2rem;
-  background-color: #E1E2E1; 
+  background-color: #303841; 
+  padding: 10rem 2rem;
 }
 
 #projects h2 {
   font-size: 4rem;
   text-decoration: underline;
+  margin-bottom: 50px;
+  color: #fff;
 }
 
 .grid {
@@ -117,11 +120,125 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
 .project-img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
+
+.project-title {
+  padding: 2rem 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.project-tile {
+  text-decoration: none;
+  background-color: #EB4962;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-out;
+}
+
+.project-tile:hover {
+  background-color: #b30038;
+  border-radius: 4px;
+}
+
+.btn-show-all:link,
+.btn-show-all:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  padding: 10px 20px;
+  background-color: #EB4962;
+  transition: background-color 0.3s ease-out;
+  border-radius: 4px;
+}
+
+.btn-show-all:active,
+.btn-show-all:hover {
+  background-color: #b30038;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+#contact h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #303841;
+}
+
+#contact p {
+  font-size: 2rem;
+  font-style: italic;
+  color: #303841;
+}
+
+.contact-links {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  max-width: 980px;
+  flex-wrap: wrap;
+}
+
+ion-icon {
+  font-size: 4rem;
+  color: #303841;
+}
+#profile-link:link,
+#profile-link:visited {
+  text-decoration: none;
+  color: #303841;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+#profile-link:active,
+#profile-link:hover {
+  transform: translateY(9px);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: #303841;
+  color: #fff;
+  border-top: 4px solid #b30038;
+}
+
+#mini-logo {
+  width: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* RESPONSIVE */
 /*Media Query  9 */
 @media screen and (max-width: 781px) {
